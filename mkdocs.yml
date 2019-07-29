@@ -1,0 +1,29 @@
+site_name: Gertrude Docs
+
+nav:
+    - Home: index.md
+    - About: about.md
+    - Installation: 
+        - Quickstart guide: quickstart.md
+        - Mac users: mac.md
+        - Windows users: windows.md
+    - Editing & Encoding: editing.md
+    - Developing & Designing: developing.md
+    - Syllabus: syllabus.md 
+
+
+theme: 
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+        - yaml
+        - bash
+        - css
+        - javascript
+        - markdown
+        - ruby
+        - html
+        - xml
+
+extra_css: 
+  - css/extra.css

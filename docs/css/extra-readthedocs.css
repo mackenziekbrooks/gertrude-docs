@@ -1,0 +1,110 @@
+/* General settings */ 
+h1, h2, h3, h4, h5 {
+	font-family: "Georgia", serif ;
+	font-size:150%;
+	font-weight:normal;
+}
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	font-size:120%;
+	background-color: #f3f3f3;
+}
+
+a, a:visited, a:hover {
+	color: #607960;
+}
+
+a.icon, a.icon:hover {
+	color: #fff;
+	background-color:#607960;
+}
+
+/* Sidebar */
+.wy-side-nav-search, .wy-nav-side, .rst-versions, .rst-current-version {
+	background-color: #607960 !important;
+
+}
+
+/* Sidebar header */
+.fa-home::before, .icon-home::before {
+    content: " 𝒢 ";
+}
+.fa-home::after, .icon-home::after {
+    content: " 𝒢 ";
+}
+
+
+.fa-home a {
+color: #fff;
+}
+.wy-side-nav-search > a {
+	font-weight: normal;
+	font-family: "Georgia", serif;
+	font-size:120%;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+div.rst-versions {
+background-color:#8ca28c;
+}
+
+
+/* all the links */ 
+.wy-menu-vertical a {
+	color: #fff;
+}
+
+.wy-menu-vertical a:hover {
+	background: #8ca28c;
+}
+
+.wy-menu-vertical li.current {
+	color: #8ca28c;
+}
+
+.wy-menu-vertical li.current a {
+	background: #8ca28c;
+	border:none;
+	color: #fff;
+}
+
+.wy-menu-vertical li.current a:hover {
+	background: #8ca28c;
+}
+
+/* this is the submenu highlight */ 
+.wy-menu-vertical li.current li a:hover {
+	background: #98b098;
+}
+
+
+
+/* Main content */
+
+.wy-nav-content {
+	max-width: 100%;
+	background-color: #f3f3f3;
+}
+
+.wy-nav-content-wrap, {
+	background-color: #f3f3f3;
+}
+
+.wy-breadcrumbs {
+	font-family: "Georgia", serif;
+}
+
+a.btn, a.btn-neutral {
+	font-family: "Helvetica Neue", sans-serif;
+	color: #607960;
+}
+/* Footer */
+
+footer {
+	font-family: "Georgia", serif ;
+	color: #000;
+}
