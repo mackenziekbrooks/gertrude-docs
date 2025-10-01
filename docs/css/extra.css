@@ -1,23 +1,17 @@
 /* Colors 
-#8ca28c = light highlight green
-#607960 = darker green
-#f3f3f3 = light grey background color
+#0d1a37 = dark W&L blue
 */
 
 
 /* General settings */ 
 h1, h2, h3, h4, h5 {
-	font-family: "Georgia", serif ;
-	font-size:150%;
+	font-family: "Baskerville", serif ;
 	font-weight:normal;
 }
 body {
 	font-family: "Helvetica Neue", sans-serif;
-	font-size:150%;
-	background-color: #f3f3f3;
-	background-image: url('../img/floral.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	font-size:100%;
+	background-color: #fff;
 }
 
 body:before {
@@ -25,19 +19,21 @@ body:before {
 }
 
 
-
 a, a:hover, a:focus {
-	color: #607960;
+	color: #495057;
 }
+.navbar.bg-primary {
+	background-color: #20c997 !important;
+	background-image: none;
 
 a.navbar-brand {
 	font-family:"Georgia", serif;
 }
 
 .navbar, .navbar-default {
-	background-color: #607960;
+	background-color: #0d1a37 !important;
 	background-image: none;
-	border-bottom: 1px solid #8ca28c;
+	border-bottom: 1px solid #0d1a37;
 }
 
 .nav .open > a,
@@ -53,16 +49,16 @@ a.navbar-brand {
 .navbar-default .navbar-nav > li > a:focus,
 .dropdown-active .dropdown-toggle > a:hover
  {
-	color: #fff;
-	background-color: #8ca28c !important;
+	color: #495057;
+
 }
 
 .dropdown-menu > .active > a, 
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus
   {
-	color: #fff;
-	background-color: #8ca28c !important;
+	color: #495057;
+
 }
 
 .well {
@@ -70,18 +66,13 @@ a.navbar-brand {
 	border: none;
 }
 
-.bs-sidebar {
-	font-size:150%;
-	width: 300px;
-	border: none;
-	font-family: "Georgia", sans;
-}
-footer {
-}
+
 
 footer > hr {
 	display: none;
 }
+
+
 /*
 a, a:visited, a:hover {
 	color: #607960;

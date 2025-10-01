@@ -2,14 +2,13 @@ site_name: Gertrude Docs
 
 nav:
     - Home: index.md
-    - About: about.md
-    - Installation: 
-        - Quickstart guide: quickstart.md
-        - Mac users: mac.md
-        - Windows users: windows.md
+    - Getting Started:
+        - For Non-Tech People: getting-started-non-tech.md
+        - For tech people: getting-started-tech.md
+        - Collaboration + Workflow: collaboration-workflow.md
     - Editing & Encoding: editing.md
     - Developing & Designing: developing.md
-    - Syllabus: syllabus.md 
+    - Syllabus: https://mackenziekbrooks.github.io/dci295D-f23-digitaleditions/
 
 
 theme: 
