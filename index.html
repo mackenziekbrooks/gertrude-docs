@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,99 +9,84 @@
         
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Gertrude Docs</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <link href="css/extra.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/css.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/markdown.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/ruby.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/html.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/markdown.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ruby.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/xml.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body class="homepage">
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">Gertrude Docs</a>
-                </div>
+                <a class="navbar-brand" href=".">Gertrude Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href=".">Home</a>
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
                             </li>
-                            <li >
-                                <a href="about/">About</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="quickstart/">Quickstart guide</a>
+<li>
+    <a href="getting-started-non-tech/" class="dropdown-item">For Non-Tech People</a>
 </li>
                                     
-<li >
-    <a href="mac.md">Mac users</a>
+<li>
+    <a href="getting-started-tech/" class="dropdown-item">For tech people</a>
 </li>
                                     
-<li >
-    <a href="windows.md">Windows users</a>
+<li>
+    <a href="collaboration-workflow.md" class="dropdown-item">Collaboration + Workflow</a>
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="editing.md">Editing & Encoding</a>
+                            <li class="nav-item">
+                                <a href="editing.md" class="nav-link">Editing & Encoding</a>
                             </li>
-                            <li >
-                                <a href="developing.md">Developing & Designing</a>
+                            <li class="nav-item">
+                                <a href="developing.md" class="nav-link">Developing & Designing</a>
                             </li>
-                            <li >
-                                <a href="syllabus.md">Syllabus</a>
+                            <li class="nav-item">
+                                <a href="https://mackenziekbrooks.github.io/dci295D-f23-digitaleditions/" class="nav-link">Syllabus</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="disabled">
-                                <a rel="next" >
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="about/">
+                            <li class="nav-item">
+                                <a rel="next" href="getting-started-non-tech/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -111,73 +96,104 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#gertrude-docs">Gertrude Docs</a></li>
-            <li><a href="#welcome">Welcome</a></li>
-            <li><a href="#table-of-contents">Table of Contents</a></li>
-            <li><a href="#how-to-use">How to Use</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-<h1 id="gertrude-docs">Gertrude Docs</h1>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#welcome" class="nav-link">Welcome</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#impetus" class="nav-link">Impetus</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ethos" class="nav-link">Ethos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#contact" class="nav-link">Contact</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
 <h2 id="welcome">Welcome</h2>
-<p>Gertrude is a Jekyll theme, documentation, and course materials for creating a TEI-based digital edition using the static site generator Jekyll and the JavaScript library CETEIcean. It was designed to serve anyone looking to create a digital edition without the resources of a development team or the time to troubleshoot every error message. </p>
-<p>Gertrude is named after Gertrude Jekyll, a garden designer of the Arts and Crafts movement. Gertrude believed THINGS. Like gardening, the process of creating a digital edition is slow, iterative, and privileges maintenance over innovation. </p>
-<p>More information on motivations, credits, etc, can be found on the <a href="about/index.html">About</a> page. </p>
+<p>Gertrude is platform for creating lightweight and <strong>sustainable digital editions</strong> with accompanying documentation and course materials. Gertrude was designed within the small liberal arts college context in which project teams are small, but may include technologists, librarians, scholars, and students. The platform combines <a href="https://tei-c.org/">TEI-XML</a> encoded documents, the static site generator <a href="https://jekyllrb.com/">Jekyll</a>, and the JavaScript library <a href="https://www.github.com/TEIC/CETEIcean">CETEIcean</a> to publish standards-compliant editions via a minimal computing method. Critically, the project includes detailed documentation for setting up and customizing the platform, as well as an undergraduate-level syllabus for a course on digital editions. </p>
+<p>Gertrude is named after Gertrude Jekyll, a garden designer of the Arts and Crafts movement. Like gardening, the process of creating a digital edition is slow, iterative, and privileges maintenance over innovation. </p>
+<h2 id="impetus">Impetus</h2>
+<p>Gertrude began in 2019 as a way to share the results of multiple digital edition projects (<a href="https://www.huondauvergne.org/">Huon d'Auvergne</a> and <a href="https://wludh.github.io/digital-editions/">Digital Editions at W&amp;L</a>) created by the <a href="https://digitalhumanities.wlu.edu">Digital Humanities initiative</a> at Washington and Lee University. Recognizing the need for additional options for publishing digital editions, Digital Humanities Librarian Mackenzie Brooks started documenting and creating a generic form of the platform. </p>
+<p>In 2022, Quinn Dombrowski published the article, "<a href="https://dhq.digitalhumanities.org/vol/16/2/000594/000594.html">Minimizing Computing Maximizes Labor</a>," in a special issue of <em>Digital Humanities Quarterly</em> on minimal computing which does an excellent job of laying out the challenges of implementing minimal computing projects - namely, the question of who is performing the technical labor. Their paper proposes additional "infrastructural interventions" - of which Gertude attempts to be just one.</p>
+<blockquote>
+<p>"When going “minimal” requires a great deal of technical labor, what implications does that have for its adoption by scholars without ongoing technical support or the money or connections to delegate that work? What is the added emotional labor for technical collaborators who are only allowed to “consult” with scholars, when they attempt to coach scholars through implementing a minimal computing site on their own? What opportunities are lost when a web development methodology cannot reasonably be taught in a hands-on way in a short workshop? After describing these challenges, this paper proposes that an infrastructural intervention — encompassing everything from writing better documentation, tutorials, and templates, to developing interfaces that mediate between users and technical complexity — is necessary to realize the potential of minimal computing as a framework for sustainable websites."</p>
+</blockquote>
+<p>Dombrowski, Quinn. “Minimizing Computing Maximizes Labor.” Digital Humanities Quarterly, vol. 16, no. 2, 2022. <a href="http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html">http://www.digitalhumanities.org/dhq/vol/16/2/000594/000594.html</a>.</p>
+<h2 id="ethos">Ethos</h2>
+<p>Gertrude is intentionally designed to fill a gap in the digital edition and documentation landscape. It is not an innovative new tool, but rather the combination of existing software to create a productive development environment for small teams with a small amount of technical ability. It keeps pedagogy at its heart.</p>
+<p>The Gertrude documentation is aimed at the advanced undergraduate - perhaps a student who is embarking on a summer research experience. It imagines a technologist who can troubleshoot, but not write software from scratch. It imagines a faculty member who is curious and excited but not fluent in Digital Humanities methods. The documentation attempts to fill in the blanks between existing tutorials and solve common issues. It also addresses social and institutional realities when undertaking digital projects. </p>
+<p>Gertrude is indebted to the countless individuals and teams who have participated in the <a href="https://iliads.org/">Institute for Liberal Arts Digital Scholarship</a>. </p>
 <h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="about/index.html">About</a></li>
-<li>Installation</li>
-<li>Editing &amp; Encoding</li>
-<li>Developing &amp; Designing</li>
-<li>Syllabus</li>
-</ul>
-<h2 id="how-to-use">How to Use</h2>
-<p>If you're a... </p></div>
+<h2 id="contact">Contact</h2></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -217,6 +233,6 @@
 </html>
 
 <!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-07-29 18:11:04
+MkDocs version : 1.6.1
+Build Date UTC : 2025-10-01 00:26:06.474885+00:00
 -->

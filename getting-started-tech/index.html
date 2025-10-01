@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>test - Gertrude Docs</title>
+        <title>For tech people - Gertrude Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                                 <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Getting Started</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -55,7 +55,7 @@
 </li>
                                     
 <li>
-    <a href="../getting-started-tech/" class="dropdown-item">For tech people</a>
+    <a href="./" class="dropdown-item active" aria-current="page">For tech people</a>
 </li>
                                     
 <li>
@@ -80,6 +80,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../getting-started-non-tech/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -98,8 +108,24 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#test" class="nav-link">test</a>
+            <li class="nav-item" data-bs-level="1"><a href="#getting-started-for-tech-people" class="nav-link">Getting Started for Tech People</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#quickstart-steps" class="nav-link">Quickstart steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installing-ruby-jekyll-on-mac" class="nav-link">Installing Ruby + Jekyll on Mac</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installing-ruby-jeykll-on-windows" class="nav-link">Installing Ruby + Jeykll on Windows</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -107,7 +133,31 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="test">test</h1></div>
+<h1 id="getting-started-for-tech-people">Getting Started for Tech People</h1>
+<h2 id="overview">Overview</h2>
+<h3 id="components">Components</h3>
+<p>Gertrude is a customized Jekyll theme that includes the Javascript library CETEIcean for rendering TEI-XML in the browser and making it accessible to JavaScript via HTML Custom Elements. </p>
+<p>The theme itself is an adaption of Robert Love's <a href="https://github.com/robertlove/jekyll-bootstrap">Jekyll/Bootstrap starter project</a>. The inclusion of Bootstrap means that you can use all of the Bootstrap <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">classes and styles</a> to make a responsive and modern site. </p>
+<p>Gertrude contains custom code for handling person and place names indices and for displaying images via IIIF viewers. The Gertrude documentation details how to customize the code for particular digital edition features. </p>
+<p>Gertrude also contains some <a href="https://shopify.github.io/liquid/">Liquid templating language</a> within the Jekyll framework for arranging and displaying content on the site. </p>
+<h2 id="quickstart-steps">Quickstart steps</h2>
+<ol>
+<li>Install Ruby and Jekyll on your computer.</li>
+<li>Clone the <a href="https://github.com/mackenziekbrooks/gertrude">Gertrude repository</a> to your computer.</li>
+<li>Create a GitHub repo for your project.</li>
+<li>Commit and push the project to your new repo. </li>
+<li>Customize and develop platform to your liking. </li>
+<li>Deploy the digital edition to GitHub pages or another host. </li>
+</ol>
+<h2 id="installing-ruby-jekyll-on-mac">Installing Ruby + Jekyll on Mac</h2>
+<p>Start with Jekyll's <a href="https://jekyllrb.com/docs/installation/macos/">instructions</a>. </p>
+<p>They also recommend this document on <a href="https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">The fastest and easiest way to install Ruby on a Mac in 2025</a> which is truly the most thorough walk-through you will find. You don't have to purchase the paid solution. </p>
+<p>You might also check out <a href="https://collectionbuilder.github.io/">CollectionBuilder's</a> <a href="https://collectionbuilder.github.io/cb-docs/docs/software/">documentation</a> on installing Ruby and Jekyll. </p>
+<p>The biggest issue when setting up a development environment is ensuring that all versions of the software you're installing on your computer can work together peacefully. Ruby is a programming language that comes with particular versions. Jekyll is a Ruby <strong>gem</strong>, or code library, and it requires a number of other gems to function (once you're set up, you can see all of them in the file called <code>Gemfile</code>). These code libraries are updated all the time and depend on other code libraries to have certain functions. The most troubleshooting you'll encounter will be reconciling these issues via the Stack Overflow method of Googling an error message and trying a solution. </p>
+<h2 id="installing-ruby-jeykll-on-windows">Installing Ruby + Jeykll on Windows</h2>
+<p>Let's be honest: front-end web development is not easy on a Windows machine. It should only be attempted if you're confident in your abilities. </p>
+<p><a href="https://gitforwindows.org/">Git Bash</a> is a tool that allows you to run git from the command line in a way that is similar to the Mac (or Linux) experience. </p>
+<p><a href="https://learn.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux</a> is another option for creating a more friendly environment. </p></div>
             </div>
         </div>
 
